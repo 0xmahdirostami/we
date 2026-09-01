@@ -10,9 +10,9 @@
 
 <!--
   ==========================================================
-  Sara & Mahdi — 22 Shahrivar 1405 / 13 September 2026
+  Sara & Mahdi — engagement, 22 Shahrivar 1405 / 13 September 2026
   Editable blocks are marked data-field="..." below:
-    names, date, info, venue, address, invite-line, close-line, map
+    names, occasion, date, info, venue, address, invite-line, close-line, map
   Venue pin: 35.800259, 51.414597
   ==========================================================
 -->
@@ -181,6 +181,18 @@
     letter-spacing:.11em;
     text-indent:.11em;
   }
+  .names span small{
+    display:block;
+    margin-top:.5em;
+    font-family:var(--sans);
+    font-weight:300;
+    font-size:clamp(.6rem, 2.1vw, .76rem);
+    letter-spacing:.4em;
+    text-indent:.4em;
+    text-transform:uppercase;
+    color:var(--muted);
+    line-height:1.2;
+  }
   .names em{
     display:block;
     font-family:var(--script);
@@ -189,6 +201,28 @@
     letter-spacing:0;
     color:var(--gold-mid);
     margin:.1em 0;
+  }
+
+  .occasion{
+    margin:clamp(18px,4vw,26px) 0 0;
+    font-family:var(--fa);
+    font-weight:400;
+    font-size:clamp(1.05rem, 3.8vw, 1.28rem);
+    letter-spacing:.03em;
+    line-height:1.6;
+    color:var(--gold);
+    direction:rtl;
+  }
+  .occasion small{
+    display:block;
+    margin-top:8px;
+    font-family:var(--sans);
+    font-weight:300;
+    font-size:var(--fs-label);
+    letter-spacing:.3em;
+    text-transform:uppercase;
+    color:var(--muted);
+    direction:ltr;
   }
 
   .date-fa{
@@ -489,10 +523,14 @@
 
     <div class="arch arch--cover">
       <h1 class="names" data-field="names">
-        <span>Sara</span>
+        <span>Sara<small>Alimian</small></span>
         <em>and</em>
-        <span>Mahdi</span>
+        <span>Mahdi<small>Rostami</small></span>
       </h1>
+      <p class="occasion" lang="fa" dir="rtl" data-field="occasion">
+        جشن نامزدی
+        <small dir="ltr">Engagement Celebration</small>
+      </p>
       <div class="divider"><i></i><b>&#9829;</b><i></i></div>
       <p class="date-fa" lang="fa">۲۲ . ۰۶ . ۱۴۰۵</p>
       <p class="date-en">13 September 2026</p>
@@ -502,7 +540,7 @@
 
     <p class="cover__foot">
       Together with their families<br>
-      invite you to celebrate their wedding
+      invite you to celebrate their engagement
     </p>
   </div>
 </div>
@@ -520,10 +558,15 @@
     </p>
 
     <h1 class="names" data-field="names" style="margin-top:clamp(20px,5vw,32px)">
-      <span>Sara</span>
+      <span>Sara<small>Alimian</small></span>
       <em>and</em>
-      <span>Mahdi</span>
+      <span>Mahdi<small>Rostami</small></span>
     </h1>
+
+    <p class="occasion" lang="fa" dir="rtl" data-field="occasion">
+      جشن نامزدی
+      <small dir="ltr">Engagement Celebration</small>
+    </p>
 
     <div class="divider"><i></i><b>&#9829;</b><i></i></div>
 
