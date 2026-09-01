@@ -235,19 +235,20 @@
   .openbtn{
     appearance:none;
     cursor:pointer;
-    font-family:var(--sans);
-    font-weight:300;
-    font-size:var(--fs-label);
-    letter-spacing:.3em;
-    text-transform:uppercase;
+    font-family:var(--fa);
+    font-weight:400;
+    font-size:clamp(.92rem, 3.2vw, 1.02rem);
+    letter-spacing:0;
+    text-transform:none;
+    direction:rtl;
     color:var(--gold);
     background:linear-gradient(180deg, rgba(255,253,248,.9), rgba(240,231,215,.75));
     border:1px solid var(--line);
     border-radius:999px;
-    padding:16px 30px;
+    padding:15px 34px;
     display:inline-flex;
     align-items:center;
-    gap:12px;
+    gap:11px;
     transition:background-color 260ms ease, color 260ms ease, border-color 260ms ease, transform 260ms ease;
   }
   .openbtn:hover{
@@ -526,7 +527,7 @@
       <p class="date-en">13 September 2026</p>
     </div>
 
-    <button class="openbtn" id="openbtn">Open Invitation <span class="hz">&#9829;</span></button>
+    <button class="openbtn" id="openbtn" lang="fa" dir="rtl">مشاهده دعوت‌نامه <span class="hz">&#9829;</span></button>
 
     <p class="cover__foot">
       Together with their families<br>
